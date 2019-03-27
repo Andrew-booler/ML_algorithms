@@ -1,0 +1,35 @@
+Name: Wei Zhang
+Email: wzhang45@ur.rochester.edu
+Course: CSC446
+Homework: Implement EM fitting of a mixture of gaussians on the two-dimensional data set points.dat. You should try different numbers of mixtures, as well as tied vs. separate covariance matrices for each gaussian. 
+
+************ Files *********
+README: this file
+Zhang_Wei_hw3.py: main algorithm file
+plot.py: the file to experiment with capacity C and plot the result
+plot.png the result figure of plot.py
+
+************ Algorithm *****
+The algorithm on the book
+
+
+************ Instructions ***
+
+
+python Zhangwei_HW7.py
+[int](mixtures)
+
+************ Results *******
+
+Plot of the likelihood
+
+************ Your interpretation **** 
+
+Your understanding of the results, for instance, "from the above results, learning rate is very important that a learning rate from XX to XX yields the best result, and that a learning rate larger than XX yields a significant drop of the performance"
+
+When the capacity C is rather small, the weights will be small and unlikely overfitting. But the error are almost ignored. With C rising, the model will focus on the errors gradually. However, it will tends to overfit when C is too large. So the accuracy will rise and then fall.
+
+************ References ************
+Description of the homework in https://www.cs.rochester.edu/~gildea/2018_Spring/hw.shtml
+instruction of the homework in https://www.cs.rochester.edu/~gildea/2018_Spring/hw3_instruction.txt
+Lecture notes in https://www.cs.rochester.edu/~gildea/2018_Spring/notes.pdf

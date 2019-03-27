@@ -1,0 +1,38 @@
+Name: Wei Zhang
+Email: wzhang45@ur.rochester.edu
+Course: CSC446
+Homework: Implement EM to train an HMM for whichever dataset you used for assignment 7. The observation probs should be as in assignment 7: either gaussian, or two discrete distributions conditionally independent given the hidden state.Does the HMM model the data better than the original non-sequence model? What is the best number of states? (The answer is in the interpretation section)
+
+************ Files *********
+README: this file
+Zhang_Wei_hw8.py: main algorithm file
+state[1~6].png the result figure
+points.data: data file (Please keep this file in the same directory of the python file)
+
+************ Algorithm *****
+The algorithm on the book
+
+
+************ Instructions ***
+!!!Required Python Package:
+numpy
+math
+matplotlib.pyplot
+!!!
+python Zhang_Wei_HW7.py
+(Prompt: Please enter the number of hidden states:)
+[int](number of hidden states)
+
+************ Results *******
+
+Plot of the likelihood with train and dev data
+
+************ Your interpretation **** 
+
+I think this model is better than the non-sequential one because from the plot of state 2 and 3 we can find that there is a sequential relation in the data due to the stable likelihood the model achieve in the last. And states of 2 may be the best setting for the model because it is stable in the last (contrast with 4 or more states) and the likelihood is larger than states of 3.
+
+
+************ References ************
+Description of the homework in https://www.cs.rochester.edu/~gildea/2018_Spring/hw.shtml
+instruction of the homework in https://www.cs.rochester.edu/~gildea/2018_Spring/hw3_instruction.txt
+Lecture notes in https://www.cs.rochester.edu/~gildea/2018_Spring/notes.pdf
